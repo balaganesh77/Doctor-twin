@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "outDir": "./build",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo"
+  },
+  "include": ["./"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "tmp",
+    "**/*.log",
+    ".tsbuildinfo"
+  ]
+}
