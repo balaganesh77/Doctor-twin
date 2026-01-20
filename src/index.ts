@@ -7,6 +7,7 @@ import * as socketIO from "socket.io";
 import { socketIOManager } from "./utils/socketConnection";
 
 let server: Server;
+
 prisma.$connect().then(() => {
   logger.info("Database Connected Successfully");
   server = app.listen(config.port, () => {

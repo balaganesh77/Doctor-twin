@@ -39,7 +39,6 @@ app.use(cors());
 app.options(/.*/, cors());
 
 // jwt authentication
-// app.use(passport.initialize());
 app.use(passport.initialize() as express.RequestHandler);
 
 // v1 api routes
